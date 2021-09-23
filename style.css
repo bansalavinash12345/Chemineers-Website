@@ -442,6 +442,12 @@ color: #fff;
   margin-top: 100px;
 }
 
+.img-blog {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* about us content */
 .about-us{
   width: 80%;
