@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale= 1.0" charset="utf-8">
+  <title>Chemineers Society IITK</title>
+
+  <!-- style.csss -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+
+
+  <!-- google fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+
+<style>
+
+  /* SIMUTECH */
+ /* About sessions */
+
+.ses_content{
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+  height: auto;
+  
+  }
+  .ses_left{
+  flex-basis: 65%;
+  }
+
+  .ses_left h2{
+    color: #222;
+    font-weight: 600;
+    margin-left: 30px 0;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    font-size: 30px;
+    font:poppins;
+  }
+  .ses_left p{
+    color: #777;
+    padding: 30px;
+    padding-bottom: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #CFDAC8;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 5px 10px #b8b8b8;
+    min-height: 250px;
+    height: auto;
+    font:poppins;
+  
+  }
+  .ses_right{
+    flex-basis: 30%;
+        margin-bottom: 30px ;
+    
+  }
+ 
+  
+  
+.carousel {
+background: none;
+}
+.carousel-cell {
+width: 100%;
+height: 230px;
+margin-right: 10px;
+border-radius: 5px;
+
+
+}
+
+
+.carousel-cell-image {
+ display: block; 
+ width: 100%;
+height: 100%;
+border-radius: 20px;
+} 
+.flickity-button {
+display: none;
+}
+
+/* About Projects */
+.first{
+  padding-top: 0px;
+  height: auto;
+}
+.simutech{
+  width: 80%;
+  margin:auto;
+  /* text-align: center; */
+  margin-bottom: 100px;
+}
+.first h1{
+  margin-top: 100px;
+  text-align: center;
+  font:poppins;
+  font-weight: 600;
+
+}
+p{
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 6px;
+  font:poppins;
+}
+
+ul{
+  color: #777;
+  font-size:17px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 30px;
+  font:poppins;
+
+}
+.row_p{
+  
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.simutech-col{
+  flex-basis: 48%;
+  background: #CFDAC8;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  background-color: #d2dfe4;
+}
+
+.simutech-col h3{
+  text-align: center;
+  font-weight: 500;
+  margin: 10px 0;
+  font:poppins;
+
+}
+
+ .simutech-col a{
+  padding: 15px;
+  margin: 10px;
+} 
+.simutech-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.rows{
+  /* margin-top: 5%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+@media (max-width: 700px) {
+  .row_p, .rows{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .row_p, .rows{
+    flex-direction: column;
+  }
+  .ses_left p{
+    height: auto;
+  }
+  .carousel
+  {
+    display: block;
+  }
+  .simutech-col{
+    margin-top: 40px;
+  }
+}
+
+
+</style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <section class="sub-header">
+
+    <!-- navbar -->
+
+    <nav>
+      <a class="chemineers_logo" href="index.html"><img src="eduford_img/chemineers_logo.png"></a>
+      <div id="navLinks" class="nav-links">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul style="padding: 0px;">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="sessions.html">ACTIVITIES</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="simutech.html">SIMUTECH</a></li>
+          <li><a href="people.html">TEAM</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+
+  <h1 class="simutech-heading">SIMUTECH @Chemineers</h1>
+
+</section>
+<br><br>
+<section class="ses_content">
+  <div class="rows">
+    <div class="ses_left">
+      
+      <h2>MATLAB</h2>
+      
+      
+      <p>MATLAB is a programming language that is used to solve primarily numerical computations and plotting data in the most layman terms.The MATLAB application is built around the MATLAB programming language. Common usage of the MATLAB application involves using the "Command Window" as an interactive mathematical shell or executing text files containing MATLAB code
+        For Chemical Engineers, the applications are many, ranging from process control, process calculations, numerical manipulation to process simulation and modelling and optimization. Matlab is a powerful tool to do all these things easily. Chemineers also offer projects in matlab that gives a close vibe of its industrial application.
+      </p>
+      <br><br>
+    </div>
+
+    <div class="ses_right">
+      <br><br><br><br>
+
+      <div class="carousel" data-flickity='{ "autoPlay": true, "wrapAround": true }'>
+            <div class="carousel-cell">
+                 <img class="carousel-cell-image" 
+                     src ="https://1000logos.net/wp-content/uploads/2021/04/MATLAB-logo.png" alt="tulip" />
+            </div>
+         
+            <div class="carousel-cell">
+                 <img class="carousel-cell-image" 
+                     src ="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/MATLAB_mesh_sinc3D.svg/512px-MATLAB_mesh_sinc3D.svg.png" alt="touch screen" />
+            </div>
+            
+       </div>
+    </div>
+  </div>
+
+
+
+  <div class="rows">
+    <div class="ses_left">
+      
+      <h2>ASPEN</h2>
+     
+      <p>ASPEN is a process simulation software package widely used in industry. Given a process design and an appropriate selection of thermodynamic models, it uses mathematical models to predict the performance of the process. In industries accurate modeling of thermodynamic properties is particularly important and working in Aspen is a great tool to ponder with.
+      Every year SimuTech offer atleast one project based on Aspen hence you will definitely get hands on it.
+      Also, Chemineers conducts Sessions for CHE students to learn the use of AspenTech software.
+        
+      </p>
+      <br><br>
+    </div>
+
+    <div class="ses_right">
+      <br><br><br><br>
+
+      <div class="carousel" data-flickity='{ "autoPlay": true, "wrapAround": true }'>
+            <div class="carousel-cell">
+                 <img class="carousel-cell-image" 
+                     src ="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Aspen_Technology_Logo.svg/1200px-Aspen_Technology_Logo.svg.png" alt="tulip" />
+            </div>
+            <div class="carousel-cell">
+                 <img class="carousel-cell-image" 
+                     src ="https://img.automationworld.com/files/base/pmmi/all/image/2014/06/aw_25441_1406np_aspentech.png?auto=format%2Ccompress&fit=max&q=70&w=1200" alt="touch screen" />
+            </div>
+       </div>
+    </div>
+  </div>
+
+
+
+  <div class="rows">
+    <div class="ses_left">
+      
+      <h2>COMSOL</h2>
+      
+      <p>The first step in modeling any system is establishing the material balances. In COMSOL, you can enter chemical equations and automatically obtain the material balance equations for the chemical species in the system and the energy balance equations for the system. It's cool, isn't it? Similarly, there are many other operations you can do on it quickly. It is specially designed for chemical engineering, so a chemical engineer should know about it because it is used widely in industries.Beside the classical problems that can be addressed with application modules, the core Multiphysics package can be used to solve PDEs in weak form.
+        
+      </p>
+      <br><br>
+    </div>
+
+    <div class="ses_right">
+      <br><br><br><br>
+
+      <div class="carousel" data-flickity='{ "autoPlay": true, "wrapAround": true }'>
+            <div class="carousel-cell">
+                 <img class="carousel-cell-image" 
+                     src ="https://3yq5q42rw3z48qnbj46yehrx-wpengine.netdna-ssl.com/wp-content/uploads/2012/06/comsol1.jpg" alt="tulip" />
+            </div>
+            <div class="carousel-cell">
+                 <img class="carousel-cell-image" 
+                     src ="https://cdn.comsol.com/product-new/comsol-multiphysics/electromagnetics-example-comsol-multiphysics.png" alt="touch screen" />
+            </div>
+           
+       </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="simutech first">
+  <h1> PROJECTS </h1>
+  <br>
+  <br>
+
+
+  <div class="row_p">
+    <div class="simutech-col ">
+      <h3>LOW TEMPERATURE CRACKING OF METHANE</h3>
+      <p>
+      <ul>
+        <li>The Project aims to develop a catalyst
+          which can catalyze methane cracking at
+          low temperatures.</li>
+          <li>Studying the driving factor in methane
+            cracking.</li>
+          <li>Impacts of low temperature cracking of
+            methane</li>
+          <li>Studying the catalytic process, different
+            bonds and the bond energies of
+            molecules in the reaction.</li>
+      </ul> 
+    </p>
+      <a href="#" class="hero-btn red-btn"> Open pdf</a>
+
+    </div>
+
+    <div class="simutech-col ">
+      <h3>COMPUTATIONAL HEAT TRANSFER</h3>
+      <p><ul>
+        <li>Modes of Heat Transfer- Conduction, Convection and Radiation</li>
+        <li>Energy Balance</li>
+        <li>General Heat Conduction Equation</li>
+        <li>Finite Difference Method and Discretization Techniques for PDE</li>
+      </ul> 
+     </p>
+      <a href="#" class="hero-btn red-btn" > Open pdf</a>
+    </div>
+
+   
+  </div>
+
+</section>
+
+<section class="simutech">
+
+  <div class="row_p">
+    <div class="simutech-col ">
+      <h3>BINARY DISTILLATION COLUMN DESIGN  </h3>
+      <p> 
+        <ul>
+        <li>Optimized Continuous Distillation Column for binary mixture in MATLAB software using different VLE(Vapor-Liquid Equilirium)</li>
+              <li>Deliberated upon design considerations and software
+                mileage for designing a distillation column using DWSIM</li>
+      </ul> 
+     </p>
+      <a href="#" class="hero-btn red-btn"> Open pdf</a>
+    </div>
+
+    <div class="simutech-col ">
+      <h3>MODEL ISOTHERMAL & NON-ISOTHERMAL REACTORS</h3>
+      <p><ul>
+        <li>
+          Design equation of
+         Ideal reactors (Batch,
+          CSTR and PFR)
+        </li>
+        <li>Analysis of reactor
+          equations in
+          Isothermal and Nonisothermal
+          conditions</li>
+          <li>Learn the Basics and
+            simulation on
+            COMSOL for solving
+            problem statements</li>
+      </ul>
+     </p>
+      <a href="#" class="hero-btn red-btn"> Open pdf</a>
+    </div>
+
+   
+
+  </div>
+
+</section>
+
+  <footer>
+  <section class="lastpart">
+
+
+    <div class="row">
+      <div class="lastpart-col">
+
+        <h3>Location </h3>
+        <p>FB-462<br> Department of Chemical Engineering<br> Indian Institute of Technology, Kanpur <br>Uttar Pradesh, 208016</p>
+
+      </div>
+      <div class="lastpart-col">
+        <div class="media-icons">
+          <h3>Around The Web </h3>
+          <a href="https://www.facebook.com/ChemineersSociety/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/in/chemineers?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWbZDLc9kS5GTKK60Tsk5%2FA%3D%3D" target="_blank""><i class="fab fa-linkedin"></i></a>
+
+        </div>
+
+
+      </div>
+      <div class="lastpart-col">
+
+        <h3>External Links</h3>
+        <br>
+        <div class="links">
+          <div><a href="https://www.iitk.ac.in" target="_blank">IIT Kanpur</a></div>
+          <div><a href="https://www.iitk.ac.in/che/" target="_blank">Chemical Engineering, IITK</a></div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+  </footer>
+
+
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="/path/to/flickity.pkgd.min.js"></script>
+
+
+</body>
+
+</html>
