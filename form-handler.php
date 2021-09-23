@@ -4,10 +4,6 @@ $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_from = 'sahilsundaiit@gmail.com';
-
-$email_subject = 'New Form Submission';
-
 $email_body = "User Name: $name.\n".
 "User Email: $visitor_email.\n".
 "User Subject: $subject.\n".
@@ -15,11 +11,11 @@ $email_body = "User Name: $name.\n".
 
 $to = 'sahilsundaiit@gmail.com';
 
-$headers = "From: $email_from \r\n";
+$headers = "From: $visitor_email \r\n";
 
-$headers .= "Reply-To: $visitor_email \r\n";
+$headers .= "Reply-To: $to \r\n";
 
-mail($to,$email_subject,$email_body,$headers);
+mail($to,$subject,$email_body,$headers);
 
 header("Location: contact.html")
 
